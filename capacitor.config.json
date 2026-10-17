@@ -1,0 +1,9 @@
+{
+  "appId": "com.daftari.app",
+  "appName": "دفتري",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#F2F6F5"
+  }
+}

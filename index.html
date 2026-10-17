@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>دفتري</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="lock" class="lock" hidden></div>
+<div id="app" hidden>
+  <header class="top">
+    <h1 id="ttl">دفتري</h1>
+    <div class="top-tools">
+      <div class="mon" id="mon" hidden>
+        <button type="button" data-act="mprev" aria-label="الفترة السابقة"></button>
+        <span id="mlabel"></span>
+        <button type="button" data-act="mnext" aria-label="الفترة التالية"></button>
+      </div>
+      <button type="button" class="icon-btn" data-act="lock" aria-label="قفل التطبيق" id="lockBtn"></button>
+    </div>
+    <p class="status" id="save" hidden></p>
+  </header>
+  <main id="view"></main>
+  <button type="button" class="fab" id="fab" data-act="add"></button>
+  <nav class="tabs" aria-label="التنقل"><div id="tabs"></div></nav>
+</div>
+<div id="sheetWrap" hidden><div id="sheet" role="dialog" aria-modal="true"></div></div>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<input type="file" id="imp" accept="application/json,.json" hidden>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
